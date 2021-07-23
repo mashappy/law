@@ -1,0 +1,185 @@
+.contWrap{
+	width:1920px;
+	.contBanner{
+		height:515px;width:100%;overflow-x:hidden;
+	}
+	.contModuleWrap{
+		width:1200px;margin:0 auto;
+		.contAd{
+			margin-bottom:30px;width:1200px;
+		}
+		.contModuleOne{
+			margin:10px 0;
+			.swiperWrap{
+				width:710px;height:510px;background:pink;
+				.swiper{
+					width:100%;height:510px;position:relative;
+					.swiperText{position:absolute;bottom:0;line-height:60px;
+						padding:0 20px;width:100%;background:rgba(0, 0, 0, 0.5);color:#fff;
+					}
+				}
+			}
+			.moduleCont{
+				display:flex;align-items:center;justify-content: space-between;
+				.moduleCard{
+					width:470px;height:510px;
+				}
+			}
+			.moduleBottom{
+				display:flex;align-items:center;justify-content: space-between;
+				.cardCont{
+					display:flex;justify-content: space-between;align-items: flex-start;margin-top:10px;margin-bottom:10px;cursor:pointer;
+					.cardImg{
+						width:190px;height:115px;margin-right:20px;
+					}
+					.cardContText{
+						line-height:26px;
+						.cardContTitle{
+							margin-top:-6px;font-size:14px;font-weight:600;
+						}
+						.cardContSub{
+							font-size:12px;color:#666;line-height:20px;margin-top:10px;
+						}
+					}
+				}
+				
+				.ant-card-head-title{
+					position:relative;padding-left:16px;font-size:16px;font-weight:600;
+					&:after{
+						position:absolute;content:'';
+						width:4px;height:16px;background:#bd1a2d;top:21px;left:0px;
+					}
+				}
+			}
+			
+			
+		}
+	}
+	
+	// 第二个模块
+	.moduleContTwo{
+		.moduleItem{margin-bottom:20px;}
+		.ant-card-head-title{
+			text-align:center;position:relative;font-size:16px;font-weight:600;padding:10px 0;
+			&:after{
+				position:absolute;content:'';width:110px;height:4px;background:#bd1a2d;top:0;left:0;right:0;margin:0 auto;
+			}
+		}
+		.ant-card-head{border-bottom:none;}
+	}
+	.moduleContBanner{width:590px;margin-bottom:16px;}
+	
+	// 第三个模块
+	.moduleThree{
+		display:flex;align-items: flex-start;justify-content: space-between;
+		.moduleLeft{
+		}
+		
+		.ant-card-head-title{
+			color:#fff;position:relative;padding:0 0 0 28px;height:48px;z-index:3;line-height:48px;font-size:16px;font-weight:600;
+			&:after{
+				content:'';width:120px;height:48px;background:#bd1a2d;position:absolute;top:0;left:0;z-index:-1;
+			}
+		}
+		.ant-card-extra{
+			padding:0;
+		}
+		.ant-card-body{
+			border-top:2px solid #bd1a2d;
+		}
+		.rightTopCont{
+			display:flex;align-itmes:flex-start;justify-content: space-between;
+			.contImg{
+				width:380px;height:300px;
+			}
+			.topCont{
+				line-height:30px;width:370px;
+				.topContTitle{
+					font-size:16px;font-weight:600;color:#333;
+				}
+				.topContSub{
+					font-size:14px;color:#666;line-height:26px;margin-top:6px;-webkit-line-clamp:9;
+				}
+			}
+		}
+		.contItem{
+			display:flex;align-items:center;flex-wrap:wrap;justify-content: space-between;
+			.itemTitle{
+				width:48%;
+			}
+		}
+		
+	}
+	// 第四个模块
+	.moduleFour{
+		.moduleFourCard{
+			
+		}
+		.moduleItem{
+			display:flex;align-items:center;flex-wrap:wrap;justify-content: space-between;
+			.itemTitle{
+				width:48%;
+			}
+		}
+	}
+	// 工作人员查询
+	.screenWrap{
+		background:#f3f3f3;padding:10px 20px;display:flex;align-items:center;color:#333;margin:20px 0;
+		.screenTitle{
+			font-size:16px;font-weight:600;margin-right:20px;
+		}
+		.screenItem{
+			margin-left:20px;display:flex;align-items:center;width: 380px;
+			.screenItemTitle{
+				font-size:14px;
+			}
+			.screenItemIpt{
+				width:300px;margin:0 20px;
+			}
+		}
+		.screenBtn{
+			background:#bd1a2d;border-color:#bd1a2d;padding:4px 30px;margin-left:20px;
+		}
+	}
+	// 新闻消息
+	.newsWrap{
+		background:#f3f3f3;margin-top:10px;display:flex;align-items:center;padding:0 20px;
+		.newsIcon{
+			width:15px;height:15px;margin-right:20px;
+		}
+		.carouselWrap,.carousel,.newsTitle{
+			height:40px;line-height:40px;width:100%;
+		}
+		// .slick-list{height:40px;line-height:40px;}
+		// .newsCarouselWrap{
+		// 	height:40px;line-height:40px;
+		// 	.newsCarousel{
+		// 		height:40px;line-height:40px;
+		// 		.newsTitle{
+		// 			height:40px;line-height:40px;
+		// 		}
+		// 	}
+		// }
+		
+		
+	}
+}
+
+.moduleTitle{
+	position:relative;padding-left:14px;cursor:pointer;
+	&:after{
+		content:'';width:4px;height:4px;border-radius:4px;background:#dddddd;position:absolute;left:0;top:22px;
+	}
+	&:hover{color:#bd1a2d;}
+}
+
+.moduleTwoTitle{
+	padding-left:14px;cursor:pointer;font-size:14px;
+	&:hover{color:#bd1a2d;}
+}
+// 公共样式
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,.ant-tabs-tab-btn:focus, .ant-tabs-tab-remove:focus, .ant-tabs-tab-btn:active, .ant-tabs-tab-remove:active{font-weight:600;}
+// .ant-tabs-tab:hover{color:#bd1a2d;}background:#bd1a2d;color:#bd1a2d;
+.ant-tabs-ink-bar{top:0;height:4px;}
+.ant-card-body{padding:0px;line-height:45px;font-size:14px;color:#333;}
+.ant-card-head{padding:0;}
