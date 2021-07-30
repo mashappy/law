@@ -1,0 +1,15 @@
+.ContactWrap{
+	width:1200px;margin:40px auto;min-height:364px;
+	.contactTitle{
+		font-size:18px;color:#333;font-weight:600;
+	}
+	.contactCont{
+		font-size:16px;margin-top:20px;
+		.contItem{
+			margin-right:30px;
+		}
+		.contText{
+			text-indent:30px;margin-bottom:20px;line-height:40px;
+		}
+	}
+}

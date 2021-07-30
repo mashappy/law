@@ -16,6 +16,7 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
+import { ConfigProvider } from "antd"
 
 import React from 'react';
 import { render } from 'react-dom';
@@ -28,4 +29,6 @@ import moment from 'moment';
 import 'moment/locale/zh-cn';
 moment.locale('zh-cn'); // 注意这里设置 moment 必须放在有 import 的后面。
 
-render(<App />, document.getElementById('root'));
+render(<ConfigProvider locale={zhCN}>
+    <App />
+  </ConfigProvider>, document.getElementById('root'));

@@ -75,12 +75,12 @@ class FooterCont extends React.Component{
 				</div>
 				<div className="footerBottom">
 					<div className="bottomnet">
-						<span className="intranetItem curPointer">联系我们</span>
-						<span className="intranetItem curPointer">关于法制资讯聚焦网</span>
-						<span className="intranetItem curPointer">合作加盟</span>
-						<span className="intranetItem curPointer">供稿服务</span>
-						<span className="intranetItem curPointer">网站招聘</span>
-						<span className="intranetItem curPointer">网站律师</span>
+						<a href="/contactUs" target="_blank" className="intranetItem curPointer">联系我们</a>
+						<a href="/about" target="_blank" className="intranetItem curPointer">关于法制资讯聚焦网</a>
+						<a href="#" className="intranetItem curPointer">合作加盟</a>
+						<a href="#" className="intranetItem curPointer">供稿服务</a>
+						<a href="#" className="intranetItem curPointer">网站招聘</a>
+						<a href="/lawyer" target="_blank" className="intranetItem curPointer">网站律师</a>
 					</div>
 					<div className="bottomnet">
 						<span className="intranetItem">违法和不良信息举报电话&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;010--64630988</span>

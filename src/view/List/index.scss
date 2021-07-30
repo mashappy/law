@@ -1,0 +1,21 @@
+.listWrap{
+	width:1200px;margin:0 auto;padding:20px 0;
+	.listCont{
+		line-height:60px;border-bottom:1px solid #eee;display:flex;align-items:center;justify-content: space-between;cursor:pointer;color:#333;
+		&:hover{
+			color:#bd1a2d;
+			.contTime{
+				color:#bd1a2d;
+			}
+		}
+		.contTitle{
+			font-size:16px;padding-right:60px;
+		}
+		.contTime{
+			font-size:14px;color:#666;
+		}
+	}
+	.listPage{
+		margin-top:20px;text-align:center;
+	}
+}

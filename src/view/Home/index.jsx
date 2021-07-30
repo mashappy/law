@@ -296,6 +296,10 @@ class ModuleContThree extends React.Component{
 			cardMoreStyle:{'fontSize':'12px',"color":"#888"},
 		}
 	}
+	handleClick(e){
+		const w=window.open('about:blank');
+		w.location.href= '/list' ;
+	}
 	render(){
 		let state = this.state;
 		return (
@@ -330,7 +334,7 @@ class ModuleContThree extends React.Component{
 					  {
 						  state.cardDataTwo.map((items,indexs)=>{
 							  return (
-								<p className="itemTitle moduleTitle ellipsis" key={indexs} >{items.title}</p>
+								<p onClick={this.handleClick.bind(this)} className="itemTitle moduleTitle ellipsis" key={indexs} >{items.title}</p>
 							  )
 						  })
 					  }
@@ -429,6 +433,10 @@ class ModuleContFour extends React.Component{
 		console.log(key, type);
 		this.setState({ [type]: key });
 	};
+	handleClick(e){
+		const w=window.open('about:blank');
+		w.location.href= '/list' ;
+	}
 	render(){
 		let state = this.state;
 		return (
@@ -444,7 +452,7 @@ class ModuleContFour extends React.Component{
 					<div className="moduleItem">
 					  {
 						  state.tableListCont[state.noTitleKey].map((item,index)=>{
-							return  <p className="itemTitle moduleTitle ellipsis" key={index} >{item.title}</p>
+							return  <p className="itemTitle moduleTitle ellipsis" key={index} onClick={this.handleClick.bind(this)}>{item.title}</p>
 						  })
 					  }
 					</div>
@@ -485,7 +493,7 @@ class HomeCont extends React.Component{
 	render(){
 		return (
 			<div className="contWrap">
-				<img className="contBanner" src={require('./../../accests/imgs/banner.png').default} alt="法制资讯聚焦" />
+				<div className="bannerWrap"><img className="contBanner" src={require('./../../accests/imgs/banner.png').default} alt="法制资讯聚焦" /></div>
 				<div className="contModuleWrap">
 				
 					<ModuleContOne />

@@ -1,7 +1,11 @@
 .contWrap{
-	width:1920px;
-	.contBanner{
-		height:515px;width:100%;overflow-x:hidden;
+	// width:1920px;
+	width:100%;overflow-x: hidden;
+	.bannerWrap{
+		width:1200px;height:515px;margin:0 auto;position:relative;
+		.contBanner{
+			height:515px;width:1920px;display:block;position:absolute;left:-352px;
+		}
 	}
 	.contModuleWrap{
 		width:1200px;margin:0 auto;

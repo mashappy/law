@@ -5,8 +5,12 @@ import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import styled from 'styled-components'
 
-const Home = lazy(() => import('../view/Home/index.jsx'))
-const List = lazy(() => import('../view/List/index.jsx'))
+const Home = lazy(() => import('../view/Home/index.jsx')) // 首页
+const List = lazy(() => import('../view/List/index.jsx')) // 列表页
+const Detail = lazy(() => import('../view/Detail/index.jsx')) // 详情页
+const ContactUs = lazy(() => import('../view/FooterAbout/ContactUs/index.jsx')) // 联系我们
+const About = lazy(() => import('../view/FooterAbout/About/index.jsx')) // 关于我们
+const Lawyer = lazy(() => import('../view/FooterAbout/Lawyer/index.jsx')) // 网站律师
 const Containers: CustomRouter.Route[] = [
   {
     name: 'Home',
@@ -19,6 +23,30 @@ const Containers: CustomRouter.Route[] = [
     path: '/list',
     exact: true,
     comp: List,
+  },
+  {
+    name: 'Detail',
+    path: '/detail',
+    exact: true,
+    comp: Detail,
+  },
+  {
+    name: 'ContactUs',
+    path: '/contactUs',
+    exact: true,
+    comp: ContactUs,
+  },
+  {
+    name: 'About',
+    path: '/about',
+    exact: true,
+    comp: About,
+  },
+  {
+    name: 'Lawyer',
+    path: '/lawyer',
+    exact: true,
+    comp: Lawyer,
   },
 ]
 

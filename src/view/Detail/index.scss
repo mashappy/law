@@ -1,0 +1,30 @@
+.detailCont{
+	width:1200px;margin:30px auto 40px;
+	.contBread{margin-bottom:10px;}
+	.contTitle{
+		font-size:36px;font-weight:600;color:#333;
+	}
+	.contSub{
+		display:flex;align-items:center;margin-top:20px;color:#999;font-size:14px;justify-content: center;
+		.subItem{margin-right:20px;}
+	}
+	.contDetail{
+		margin-top:30px;
+		.detailText{
+			margin-bottom:20px;font-size:16px;line-height:30px;text-indent:40px;
+		}
+		.detailReporter,.detailSource{
+			text-align:right;margin-bottom:20px;font-size:14px;color:#404040;
+		}
+	}
+	.detailOther{
+		margin-top:30px;border-top:1px solid #eee;padding-top:20px;
+		.otherItem{
+			color:#333;font-size:14px;margin-top:10px;cursor:pointer;
+			&:hover{color:#bd1a2d;}
+			.itemTitle{
+				font-weight:600;margin-right:10px;display:inline-block;
+			}
+		}
+	}
+}
