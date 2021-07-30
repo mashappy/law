@@ -65,7 +65,7 @@ class ListCont extends React.Component{
 	}
 	handleClick(e){
 		const w=window.open('about:blank');
-		w.location.href= '/list' ;
+		w.location.href= '/detail' ;
 	}
 	render(){
 		let state = this.state;
@@ -177,7 +177,7 @@ class ModuleContOne extends React.Component{
 					<Card className="moduleCard" bordered={false}
 					  tabList={state.tabListNoTitle}
 					  activeTabKey={state.noTitleKey}
-					  tabBarExtraContent={<a style={state.cardMoreStyle} href="#">更多></a>}
+					  tabBarExtraContent={<a style={state.cardMoreStyle} href="/list" target="_blank">更多></a>}
 					  onTabChange={key => {
 						this.onTabChange(key, 'noTitleKey');
 					  }}
@@ -194,7 +194,7 @@ class ModuleContOne extends React.Component{
 					{
 						state.cardList.map((items,indexs)=>{
 							return (
-								<Card key={indexs} title={items} extra={<a style={state.cardMoreStyle} href="#">更多></a>} style={{ width: 380 }} bordered={false}>
+								<Card key={indexs} title={items} extra={<a style={state.cardMoreStyle} href="/list" target="_blank">更多></a>} style={{ width: 380 }} bordered={false}>
 								  {
 									state.cardSmallData.map((item,index)=>{
 										return (
@@ -238,7 +238,7 @@ class ModuleContTwo extends React.Component{
 	}
 	handleClick(e){
 		const w=window.open('about:blank');
-		w.location.href= '/list' ;
+		w.location.href= '/detail' ;
 	}
 	render(){
 		let state = this.state;
@@ -258,6 +258,8 @@ class ModuleContTwo extends React.Component{
 											  )
 										  })
 									  }
+									  <a className="btnWrap" href="/list" target="_blank"><Button className="moduleBtn">查看更多</Button></a>
+									  
 									</Card>
 								</Col>
 							)
@@ -298,7 +300,7 @@ class ModuleContThree extends React.Component{
 	}
 	handleClick(e){
 		const w=window.open('about:blank');
-		w.location.href= '/list' ;
+		w.location.href= '/detail' ;
 	}
 	render(){
 		let state = this.state;
@@ -308,7 +310,7 @@ class ModuleContThree extends React.Component{
 					{
 						state.listNav.map((item,index)=>{
 							return (
-								<Card title={item} key={index} style={{ width: 400 }} bordered={false} extra={<a style={state.cardMoreStyle} href="#">更多></a>}>
+								<Card title={item} key={index} style={{ width: 400 }} bordered={false} extra={<a style={state.cardMoreStyle}  href="/list" target="_blank">更多></a>}>
 								  {
 									  state.cardData.map((items,indexs)=>{
 										  return (
@@ -322,7 +324,7 @@ class ModuleContThree extends React.Component{
 					}
 				</div>
 				<div className="moduleRight">
-					<Card title='人物访谈' style={{ width: 778 }} bordered={false} extra={<a style={state.cardMoreStyle} href="#">更多></a>}>
+					<Card title='人物访谈' style={{ width: 778 }} bordered={false} extra={<a style={state.cardMoreStyle} href="/list" target="_blank">更多></a>}>
 					<div className="rightTopCont">
 						<img className="contImg" src={require('./../../accests/imgs/card.jpg').default} alt='新闻' />
 						<div className="topCont">
@@ -435,7 +437,7 @@ class ModuleContFour extends React.Component{
 	};
 	handleClick(e){
 		const w=window.open('about:blank');
-		w.location.href= '/list' ;
+		w.location.href= '/detail' ;
 	}
 	render(){
 		let state = this.state;
@@ -444,7 +446,7 @@ class ModuleContFour extends React.Component{
 				<Card className="moduleFourCard" bordered={false}
 				  tabList={state.tabListNoTitle}
 				  activeTabKey={state.noTitleKey}
-				  tabBarExtraContent={<a style={state.cardMoreStyle} href="#">更多></a>}
+				  tabBarExtraContent={<a style={state.cardMoreStyle} href="/list" target="_blank">更多></a>}
 				  onTabChange={key => {
 					this.onTabChange(key, 'noTitleKey');
 				  }}
