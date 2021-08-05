@@ -11,6 +11,7 @@ const Detail = lazy(() => import('../view/Detail/index.jsx')) // 详情页
 const ContactUs = lazy(() => import('../view/FooterAbout/ContactUs/index.jsx')) // 联系我们
 const About = lazy(() => import('../view/FooterAbout/About/index.jsx')) // 关于我们
 const Lawyer = lazy(() => import('../view/FooterAbout/Lawyer/index.jsx')) // 网站律师
+const Screen = lazy(() => import('../view/Screen/index.jsx')) // 工作人员查询页面
 const Containers: CustomRouter.Route[] = [
   {
     name: 'Home',
@@ -47,6 +48,12 @@ const Containers: CustomRouter.Route[] = [
     path: '/lawyer',
     exact: true,
     comp: Lawyer,
+  },
+  {
+    name: 'Screen',
+    path: '/screen',
+    exact: true,
+    comp: Screen,
   },
 ]
 

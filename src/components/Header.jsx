@@ -5,6 +5,35 @@ import React from 'react'
 class HeaderCont extends React.Component{
 	constructor(props){
 		super(props)
+		// 获取当前日期
+		var today = new Date(),
+		date = today.getFullYear() + '年' + (today.getMonth() + 1) + '月' + today.getDate() +'日';
+		var days = today.getDay();
+		switch(days) {
+			case 1:
+				  days = '星期一';
+				  break;
+			case 2:
+				  days = '星期二';
+				  break;
+			case 3:
+				  days = '星期三';
+				  break;
+			case 4:
+				  days = '星期四';
+				  break;
+			case 5:
+				  days = '星期五';
+				  break;
+			case 6:
+				  days = '星期六';
+				  break;
+			case 0:
+				  days = '星期日';
+				  break;
+
+		}
+		// state
 		this.state = {
 			navList:[
 				{title:'网站首页',url:'/'},
@@ -18,8 +47,12 @@ class HeaderCont extends React.Component{
 				{title:'专题报道',url:'/List'},
 				{title:'关注民生',url:'/List'},
 				{title:'反腐倡廉',url:'/List'},
-			]
+			],
+			currentTime:date,
+			currentdays:days
 		}
+		
+		
 	}
 	render(){
 		let state = this.state;
@@ -31,8 +64,8 @@ class HeaderCont extends React.Component{
 						<span className="leftText">法制资讯聚焦</span>
 					</div>
 					<div className="logoRight">
-						<span className="rightDate">2021年07月19日</span>
-						<span className="rightText">星期一</span>
+						<span className="rightDate">{state.currentTime}</span>
+						<span className="rightText">{state.currentdays}</span>
 					</div>
 				</div>
 				<div className="headerNav">

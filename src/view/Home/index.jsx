@@ -469,6 +469,10 @@ class ScreenCont extends React.Component{
 		super(props)
 		
 	}
+	screenHalder(e){
+		const w=window.open('about:blank');
+		w.location.href= '/screen' ;
+	}
 	render(){
 		return (
 			<div className="screenWrap">
@@ -481,7 +485,7 @@ class ScreenCont extends React.Component{
 					<span className="screenItemTitle">编号</span>
 					<Input className="screenItemIpt" placeholder="请输入查询编号" />
 				</div>
-				<Button className="screenBtn" type="primary" shape="round" >搜索</Button>
+				<Button className="screenBtn" type="primary" shape="round" onClick={this.screenHalder.bind(this)}>搜索</Button>
 			</div>
 		)
 	}
